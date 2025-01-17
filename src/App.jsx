@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import spinXTLogo from "./assets/spinXTLogo.jpg";
+import "./App.css";
+import BackgroundImage from "./assets/Background.jpg"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <header className="App-header">
+        <div className="mainDiv">
+        <img src={spinXTLogo} className="logo react" alt="React logo"></img>
+        <h4 style={{color:"teal", marginTop:"50px"}}>Welcome to SpinXT world of Textile Products!!!</h4>
+      
+        </div>   
+        <div style={{width:"100%", minHeight:"200px", backgroundImage:`url(${BackgroundImage})` , backgroundRepeat: 'no-repeat', backgroundSize:"cover", opacity:0.9 }}>
+        <img src={BackgroundImage}  alt="React logo"></img></div> 
+      </header>
+      <div className="mainDiv"></div>
+      <div style={{ position: "fixed",
+  bottom: 0,
+  width: "100%",
+backgroundColor:"teal",
+  minHeight: "30px"}}>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
