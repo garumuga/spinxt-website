@@ -599,9 +599,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: 70%;
+  max-width: 100%;
   height: auto;
-  border-radius: 30%;
 }
 
 .img-thumbnail {
@@ -8142,7 +8141,7 @@ textarea.form-control-lg {
 
 .bg-contact {
   --bs-bg-opacity: 1;
-  background-color: #FFDBAA !important;
+  background-color: #DDA853 !important;
 }
 
 .bg-secondary {
